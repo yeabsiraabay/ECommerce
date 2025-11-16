@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kiyomi Mini Market</title>
+    <link rel="stylesheet" href="mymarket.css">
+    <script src="mymarket.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1><span id="logo-span">Kiyomi</span><br>Online Shopping Center</h1>
+        </div>
+
+        <nav class="navigationbar">
+            <ul id="navigation">
+                <li><a href="#">Home</a></li>
+                <li><a href="aboutkosc.html">About</a></li>
+                <li><a href="productsinkosc.html">Products</a></li>
+                <li><a href="category of Products.html">Category</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+            </ul>
+        </nav>
+
+        <div class="signin">
+            <button class="button">Sign in</button>
+            <button class="button">Sign up</button>
+            <div class="cart-icon">
+                <span class="cart-count">0</span>
+                <img src="cart.jpg" alt="Cart">
+            </div>
+        </div>
+    </header>
+
+    <marquee direction="left"> WELCOME TO KIYOMI ONLINE SHOPPING CENTER! </marquee>
+    <section class="hero">
+        <div class="hero-text">
+            <h2>Shop Smart, Live Better</h2>
+            <p>Discover different products with unbelievable prices.</p>
+            <a href="cart.html" class="shop-btn">Shop Now</a>
+        </div>
+        <div class="shopping-image">
+            <img src="shopping.png" alt="Shopping image">
+        </div>
+    </section>
+
+    <section class="search-filter">
+        <input type="text" placeholder="Search for products, brands or categories">
+        <select>
+            <option value="all">All Categories</option>
+            <option value="electronics">Electronics</option>
+            <option value="fashion">Fashion</option>
+            <option value="home">Home & Living</option>
+            <option value="grocery">Grocery</option>
+        </select>
+        <button type="button">Search</button>
+    </section>
+
+    <section class="products">
+        <h2>Our Products</h2>
+        <div class="product-list">
+            <div class="product-item" data-description="High-quality wirless headphones with noise cancellation and have 20 hours battery life.">
+                <img src="headphone.jpg" alt="Wireless Headphones">
+                <h3>Wireless Headphones</h3>
+                <p class="price">$45.00</p>
+                <button class="cart-btn">Add to Cart</button>
+            </div>
+
+            <div class="product-item" data-description="Fashion sneakers with breathable fabric and durable sole, perfect for everyday wear.">
+                <img src="sneaker.jpg" alt="Stylish Sneakers">
+                <h3>Stylish Sneakers</h3>
+                <p class="price">$60.00</p>
+                <button class="cart-btn">Add to Cart</button>
+            </div>
+
+            <div class="product-item" data-description="Elegant leather handbag with spacious compartments and premium finish.">
+                <img src="handbag.jpg" alt="Leather Handbag">
+                <h3>Leather Handbag</h3>
+                <p class="price">$80.00</p>
+                <button class="cart-btn">Add to Cart</button>
+            </div>
+
+            <div class="product-item" data-description="Smart watch with fitness tracking, heart rate monitor, and customizable watch faces.">
+                <img src="smartwatch.jpg" alt="Smart Watch">
+                <h3>Smart Watch</h3>
+                <p class="price">$120.00</p>
+                <button class="cart-btn">Add to Cart</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="cart">
+        <h2>Your Shopping Cart</h2>
+        <p>Items will appear here once you add them into the cart.</p>
+        <button class="checkout-btn">Proceed to Checkout</button>
+    </section>
+
+    <section class="contact" id="contact">
+        <h2>Contact Us</h2>
+        <form>
+            <input type="text" placeholder="Full Name" required>
+            <input type="email" placeholder="Email Address" required>
+            <textarea placeholder="Put your message here..." rows="4" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>Copyright &copy; 2025 Kiyomi Online Shopping Center. All rights reserved.</p>
+    </footer>
+
+ 
+    <div id="product-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <img id="modal-img" src="" alt="">
+            <h3 id="modal-title"></h3>
+            <p id="modal-price"></p>
+            <p id="modal-description"></p>
+            <button class="cart-btn">Add to Cart</button>
+        </div>
+    </div>
+</body>
+</html>

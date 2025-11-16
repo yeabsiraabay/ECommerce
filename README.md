@@ -1,2 +1,2 @@
 # ECommerce
-This repository holds codes for my ECommerce challenge project.
+My Project for 1 week  ECOmmerce webpage development challenge, using HTML5 and CSS3 only.
